@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>24681941 - Đỗ Minh Bảo | Index</title>
+    <title>Tuần 1 - Đỗ Minh Bảo</title>
 
     <style>
         * {
@@ -13,149 +12,154 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
             min-height: 100vh;
-            color: #333;
+            background: linear-gradient(
+                135deg,
+                #667eea,
+                #764ba2
+            );
         }
-        
+
         .container {
-            width: 90%;
-            max-width: 1100px;
+            width: 92%;
+            max-width: 1150px;
             margin: auto;
         }
-        /* HEADER */
-        
+
         header {
-            padding: 70px 20px 40px;
             text-align: center;
             color: white;
+            padding: 55px 20px 40px;
         }
-        
+
+        header .icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
         header h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-        
-        header p {
-            font-size: 20px;
-            opacity: 0.9;
-        }
-        /* INFORMATION */
-        
-        .info {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-        
-        .info h2 {
-            color: #5a4fcf;
-            margin-bottom: 15px;
-        }
-        
-        .info p {
-            margin: 8px 0;
-            font-size: 17px;
-        }
-        /* TITLE */
-        
-        .section-title {
-            color: white;
-            text-align: center;
-            margin: 35px 0 25px;
-            font-size: 30px;
-        }
-        /* CARDS */
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding-bottom: 40px;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 18px;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            transition: 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-        }
-        
-        .card .number {
-            width: 65px;
-            height: 65px;
-            line-height: 65px;
-            margin: auto auto 18px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        
-        .card h3 {
-            font-size: 22px;
+            font-size: 40px;
             margin-bottom: 10px;
         }
-        
-        .card p {
-            color: #666;
-            margin-bottom: 20px;
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
         }
-        
-        .btn {
+
+        .back {
             display: inline-block;
-            text-decoration: none;
+            margin-top: 20px;
             color: white;
-            background: #667eea;
-            padding: 11px 22px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.6);
             border-radius: 25px;
             transition: 0.3s;
         }
-        
-        .btn:hover {
-            background: #4c5fd5;
+
+        .back:hover {
+            background: white;
+            color: #5c55c7;
         }
-        /* FOOTER */
-        
-        footer {
-            text-align: center;
+
+        .title {
             color: white;
-            padding: 25px;
-            background: rgba(0, 0, 0, 0.15);
+            text-align: center;
+            font-size: 30px;
+            margin: 20px 0 30px;
         }
-        /* RESPONSIVE */
-        
-        @media (max-width: 800px) {
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            padding-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 22px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 35px rgba(0,0,0,0.25);
+        }
+
+        .number {
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+
+            background: linear-gradient(
+                135deg,
+                #667eea,
+                #764ba2
+            );
+
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+        .card p {
+            color: #666;
+            min-height: 45px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #667eea;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #5149c4;
+            transform: scale(1.05);
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.15);
+        }
+
+        @media (max-width: 850px) {
             .grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            header h1 {
-                font-size: 32px;
-            }
         }
-        
+
         @media (max-width: 550px) {
             .grid {
                 grid-template-columns: 1fr;
             }
+
             header h1 {
-                font-size: 27px;
-            }
-            header p {
-                font-size: 16px;
+                font-size: 30px;
             }
         }
     </style>
@@ -163,160 +167,222 @@
 
 <body>
 
-    <!-- HEADER -->
     <header>
-        <div class="container">
-            <h1>📚 BÀI TẬP LẬP TRÌNH</h1>
-            <p>Repository học tập - Đỗ Minh Bảo</p>
+
+        <div class="icon">
+            📚
         </div>
+
+        <h1>
+            TUẦN 1
+        </h1>
+
+        <p>
+            Đỗ Minh Bảo - MSSV: 24681941
+        </p>
+
+        <a
+            class="back"
+            href="../../../index.html"
+        >
+            ← Về trang chủ
+        </a>
+
     </header>
 
     <main class="container">
 
-        <!-- INFORMATION -->
-        <section class="info">
-            <h2>👨‍🎓 Thông tin sinh viên</h2>
-
-            <p>
-                <strong>Họ và tên:</strong> Đỗ Minh Bảo
-            </p>
-
-            <p>
-                <strong>MSSV:</strong> 24681941
-            </p>
-
-            <p>
-                <strong>Tuần:</strong> Tuần 01
-            </p>
-
-            <p>
-                <strong>Repository:</strong> 24681941_DoMinhBao
-            </p>
-        </section>
-
-        <!-- EXERCISES -->
-        <h2 class="section-title">
-            📖 DANH SÁCH BÀI TẬP
+        <h2 class="title">
+            📝 DANH SÁCH BÀI TẬP
         </h2>
 
         <section class="grid">
 
-            <!-- BAI 1 -->
+            <!-- BÀI 1 -->
             <div class="card">
-                <div class="number">01</div>
 
-                <h3>Bài 1</h3>
+                <div class="number">
+                    01
+                </div>
+
+                <h2>
+                    Bài 1
+                </h2>
 
                 <p>
-                    Bài tập số 1
+                    Bài tập HTML - Bài 1
                 </p>
 
-                <a class="btn" href="24681941_DoMinhBao_Tuan01/Tuan1/Bai1/">
-                    Xem bài
+                <a
+                    class="btn"
+                    href="./Bai1/Bai1.html"
+                >
+                    Xem bài →
                 </a>
+
             </div>
 
-            <!-- BAI 2 -->
-            <div class="card">
-                <div class="number">02</div>
 
-                <h3>Bài 2</h3>
+            <!-- BÀI 2 -->
+            <div class="card">
+
+                <div class="number">
+                    02
+                </div>
+
+                <h2>
+                    Bài 2
+                </h2>
 
                 <p>
-                    Bài tập số 2
+                    Bài tập gồm Bai2a và Bai2b
                 </p>
 
-                <a class="btn" href="24681941_DoMinhBao_Tuan01/Tuan1/Bai2/">
-                    Xem bài
+                <a
+                    class="btn"
+                    href="./Bai2/"
+                >
+                    Xem bài →
                 </a>
+
             </div>
 
-            <!-- BAI 3 -->
-            <div class="card">
-                <div class="number">03</div>
 
-                <h3>Bài 3</h3>
+            <!-- BÀI 3 -->
+            <div class="card">
+
+                <div class="number">
+                    03
+                </div>
+
+                <h2>
+                    Bài 3
+                </h2>
 
                 <p>
-                    Bài tập số 3
+                    Bài tập Slide / Fiddler
                 </p>
 
-                <a class="btn" href="24681941_DoMinhBao_Tuan01/Tuan1/Bai3/">
-                    Xem bài
+                <a
+                    class="btn"
+                    href="./Bai3/hometxt.html"
+                >
+                    Xem bài →
                 </a>
+
             </div>
 
-            <!-- BAI 4 -->
-            <div class="card">
-                <div class="number">04</div>
 
-                <h3>Bài 4</h3>
+            <!-- BÀI 4 -->
+            <div class="card">
+
+                <div class="number">
+                    04
+                </div>
+
+                <h2>
+                    Bài 4
+                </h2>
 
                 <p>
-                    Bài tập số 4
+                    Bài tập Classes / Member
                 </p>
 
-                <a class="btn" href="24681941_DoMinhBao_Tuan01/Tuan1/Bai4/">
-                    Xem bài
+                <a
+                    class="btn"
+                    href="./Bai4/index.html"
+                >
+                    Xem bài →
                 </a>
+
             </div>
 
-            <!-- BAI 5 -->
-            <div class="card">
-                <div class="number">05</div>
 
-                <h3>Bài 5</h3>
+            <!-- BÀI 5 -->
+            <div class="card">
+
+                <div class="number">
+                    05
+                </div>
+
+                <h2>
+                    Bài 5
+                </h2>
 
                 <p>
-                    Bài tập số 5
+                    Movie Day / Central
                 </p>
 
-                <a class="btn" href="24681941_DoMinhBao_Tuan01/Tuan1/Bai5/">
-                    Xem bài
+                <a
+                    class="btn"
+                    href="./Bai5/movieday.html"
+                >
+                    Xem bài →
                 </a>
+
             </div>
 
-            <!-- BAI 6 -->
-            <div class="card">
-                <div class="number">06</div>
 
-                <h3>Bài 6</h3>
+            <!-- BÀI 6 -->
+            <div class="card">
+
+                <div class="number">
+                    06
+                </div>
+
+                <h2>
+                    Bài 6
+                </h2>
 
                 <p>
-                    Bài tập số 6
+                    Register Form / Contact Us
                 </p>
 
-                <a class="btn" href="24681941_DoMinhBao_Tuan01/Tuan1/Bai6/">
-                    Xem bài
+                <a
+                    class="btn"
+                    href="./Bai6/RegisterForm.html"
+                >
+                    Xem bài →
                 </a>
+
             </div>
 
-            <!-- BAI 7 -->
-            <div class="card">
-                <div class="number">07</div>
 
-                <h3>Bài 7</h3>
+            <!-- BÀI 7 -->
+            <div class="card">
+
+                <div class="number">
+                    07
+                </div>
+
+                <h2>
+                    Bài 7
+                </h2>
 
                 <p>
-                    Bài tập số 7
+                    Bài tập HTML - Bài 7
                 </p>
 
-                <a class="btn" href="24681941_DoMinhBao_Tuan01/Tuan1/Bai7/">
-                    Xem bài
+                <a
+                    class="btn"
+                    href="./Bai7/Bai7.html"
+                >
+                    Xem bài →
                 </a>
+
             </div>
 
         </section>
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
+
         <p>
-            © 2026 - Đỗ Minh Bảo - MSSV: 24681941
+            © 2026 - Đỗ Minh Bảo - 24681941
         </p>
+
     </footer>
 
 </body>
-
 </html>
