@@ -1,0 +1,54 @@
+     body {
+            background-color: #8fc5f2;
+        }
+        #container {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        #logo{
+            width: 260px;
+        }
+        .title{
+            font-size: 24px;
+            padding: 15px 0;
+        }
+        .header{
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        td{
+            padding:2px;
+        }
+        label{
+            white-space: nowrap;
+        }
+         input[type="text"] {
+            height: 18px;
+        }
+
+        .long-input {
+            width: 250px;
+        }
+
+        .medium-input {
+            width: 120px;
+        }
+
+        .small-input {
+            width: 55px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid gray;
+        }
+            textarea {
+            width: 300px;
+            height: 85px;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 5px;
+        }
