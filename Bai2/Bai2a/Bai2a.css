@@ -1,0 +1,16 @@
+*{
+    box-sizing:border-box;
+    margin: 0 auto;
+
+}
+#container{
+            border: 1px solid blue;
+            padding:5px;
+            height: auto;
+            width: 1000px;
+            margin-top:20px;
+            
+        }
+#anh{
+    padding-bottom:10px;
+}
